@@ -8,6 +8,6 @@ names(xor_dataframe)[1]<-paste("input_a")
 names(xor_dataframe)[2]<-paste("input_b")
 names(xor_dataframe)[3]<-paste("output")
 
-glm.fit <- glm(output ~ input_a * input_b, data = xor_dataframe, family = binomial())
+glm.fit <- glm(output ~ input_a * input_b, data = xor_dataframe, family = binomial)
 
 predict(glm.fit, type="response")
